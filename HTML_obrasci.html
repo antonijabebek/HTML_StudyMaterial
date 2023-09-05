@@ -1,0 +1,108 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-devicewidth, inital-scale=1.0">
+    <title> Obrasci </title>
+
+
+</head>
+
+
+<body>
+
+    <form name="obrazac1" action="" method="get">
+        <p>
+            <label for="name"> First name</label> <br />
+            <input type="text" placeholder="Ana" size="20" required id="name" name="firstName" />
+        </p>
+        <p>
+            <label for="name"> Last name</label> <br />
+            <input type="text" placeholder="Anić" size="20" required id="name" name="firstName" />
+        </p>
+        <p>
+            <label for="email">Email</label> <br />
+            <input type="email" id="email" size="25" placeholders="ana.anic@example.com" required />
+        </p>
+
+        <p>
+            <label for="OIB"> OIB</label> <br />
+            <input type="text" id="OIB" placeholder="12345678912" maxlength="11" name="OIB" />
+
+        </p>
+
+        <p>
+            <label for="password"> Lozinka</label> <br />
+            <input type="password" id="password" name="lozinka" disabled />
+
+        </p>
+
+        <p>
+            <label for="color"> Boja </label> <br />
+            <input type="color" id="color" name="color" />
+
+        </p>
+
+        <p>
+            <label for="Newsletter">Prijava na newsletter</label> <br />
+            <input id="newsletter" name="newsletter" type="checkbox" />
+
+        </p>
+
+        <p>
+            Ocijenite našu uslugu <br />
+            <label for="1">1</label>
+            <input id="1" name="rating" type="radio" value="1" />
+
+            <label for="2">2</label>
+            <input id="2" name="rating" type="radio" value="2" />
+
+            <label for="3">3</label>
+            <input id="3" name="rating" type="radio" value="3" />
+            <label for="4">4</label>
+            <input id="4" name="rating" type="radio" value="4" />
+            <label for="5">5</label>
+            <input id="5" name="rating" type="radio" value="5" />
+        </p>
+
+        <p>
+            <label for="file">Učitaj datoteku</label> <br />
+            <input id="file" name="file" type="file" />
+        </p>
+
+        <p>
+            <label for="file">Opis (max 100 simbola)</label> <br />
+            <textarea id="issue" name="issue" cols="45" rows="10" maxlenght="100"> </textarea>
+        </p>
+
+        <p>
+            <label for="country">Država</label> <br />
+            <select id="country" name="country">
+                <option value="Croatia">Hrvatska</option>
+                <option value="Slovenia" selected>Slovenija</option>
+                <option value="Serbia">Srbija</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="city">Grad</label> <br />
+            <input id="city" type="text" list="cityList" />
+            <datalist id="cityList">
+                <option value="Zagreb">Zagreb</option>
+                <option value="Paris">Pariz</option>
+                <option value="Rome">Rim</option>
+            </datalist>
+        </p>
+
+        <p>
+            <input name="reset" type="reset" value="Reset form">
+            <input name="submit" type="submit" value="Submit form">
+        </p>
+    </form>
+
+</body>
+
+
+
+</html>
